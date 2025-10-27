@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./Routes/Home";
 import Rank from "./Routes/Rank";
 import Search from "./Routes/Search";
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Wrapper>
         <Header />
         <Routes>
@@ -31,7 +31,7 @@ function App() {
         </Routes>
         <Footer />
       </Wrapper>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
