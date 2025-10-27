@@ -5,6 +5,8 @@ interface IFinalStat {
   stat_value: string;
 }
 
+const BASED_URL = `https://maplestory-backend-28jj.onrender.com`;
+
 // 아이템 옵션 계산
 interface IItemEquipment {
   additional_potential_option_1 :  string; // 에디1째줄
@@ -153,42 +155,13 @@ export const jobMainStatMap: Record<string, string[]> = {
 export const commonImportantStats = ["재사용 대기시간 감소"];
 // 넥슨 API 불러오기 검색데이터
 export const fetchCharacter = async (name: string) => {
-  const response = await axios.get(`http://localhost:4000/character`, {
+  const response = await axios.get(`${BASED_URL}/character`, {
     params: {name}
   });
   return response.data;
 }
 
 export const fetchRank = async () => {
-  const response = await axios.get(`http://localhost:4000/rank`);
+  const response = await axios.get(`${BASED_URL}/rank`);
   return response.data;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
