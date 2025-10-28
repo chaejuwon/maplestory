@@ -8,7 +8,6 @@ import {
 } from "../../api";
 
 function SearchStatItem({ itemRes, basicRes }: SearchItemProps) {
-  console.log(itemRes);
   // 추가옵션 계산
   const itemScores = itemRes.item_equipment.map(item => {
     const str = Number(item.item_add_option.str ?? 0);
@@ -31,7 +30,6 @@ function SearchStatItem({ itemRes, basicRes }: SearchItemProps) {
   const job = basicRes.character_class ?? "";
   const mainStats = jobMainStatMap[job] ?? [];
   const importantStats = [...mainStats, ...commonImportantStats];
-  console.log(importantStats);
   // 잠재능력 계산
   const options = itemRes.item_equipment.map(item => {
     const options = [
@@ -102,8 +100,6 @@ function SearchStatItem({ itemRes, basicRes }: SearchItemProps) {
       merged: filtered
     };
   });
-
-  console.log(itemOptions);
   return (
     <div className="bg-white shadow-lg rounded-xl p-8 mt-6">
       <div className="grid grid-cols-2 gap-6">

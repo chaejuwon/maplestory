@@ -162,6 +162,14 @@ export const fetchCharacter = async (name: string) => {
 }
 
 export const fetchRank = async () => {
-  const response = await axios.get(`${BASED_URL}/rank`);
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const date1 = now.getDate();
+  const date =  `${year}-${month}-${date1}`;
+  console.log(date);
+  const response = await axios.get(`${BASED_URL}/rank`, {
+    params: {date}
+  });
   return response.data;
 }
