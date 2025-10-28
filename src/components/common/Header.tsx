@@ -58,7 +58,7 @@ function Header() {
   return (
     <Wrapper>
       <HeaderWrap>
-        <Link to="/"><Logo src={logo} /></Link>
+        <Link to="/home"><Logo src={logo} /></Link>
         <RightBox>
           <form onSubmit={handleSubmit(onSearch)}>
             <input type="text"
