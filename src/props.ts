@@ -161,6 +161,16 @@ export interface IRankItem {
   ranking : number;
   sub_class_name : string;
   world_name : string;
+  union_level: number;
+  union_power: number;
+  guild_name: string;
+  guild_master_name: string;
+  guild_level: number;
+  trophy_grade: string;
+  trophy_score: number;
+  dojang_floor: number;
+  dojang_time_record: number;
+  theseed_floor: number;
 }
 
 export interface IRankResponse {
