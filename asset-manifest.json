@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/maplestory/static/css/main.6372d4ef.css",
-    "main.js": "/maplestory/static/js/main.6e0e2f5c.js",
+    "main.js": "/maplestory/static/js/main.f279af89.js",
     "static/media/home-bg.png": "/maplestory/static/media/home-bg.11c281aafe85107e70b1.png",
     "static/media/MaplestoryBold.ttf": "/maplestory/static/media/MaplestoryBold.e39287220e971b277c0e.ttf",
     "static/media/MaplestoryLight.ttf": "/maplestory/static/media/MaplestoryLight.9d9497585053c96c8082.ttf",
     "static/media/maple_logo.png": "/maplestory/static/media/maple_logo.76e2aba7b4487d876c57.png",
     "index.html": "/maplestory/index.html",
     "main.6372d4ef.css.map": "/maplestory/static/css/main.6372d4ef.css.map",
-    "main.6e0e2f5c.js.map": "/maplestory/static/js/main.6e0e2f5c.js.map"
+    "main.f279af89.js.map": "/maplestory/static/js/main.f279af89.js.map"
   },
   "entrypoints": [
     "static/css/main.6372d4ef.css",
-    "static/js/main.6e0e2f5c.js"
+    "static/js/main.f279af89.js"
   ]
 }
