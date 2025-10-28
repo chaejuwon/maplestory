@@ -150,7 +150,7 @@ export const jobMainStatMap: Record<string, string[]> = {
 };
 export const commonImportantStats = ["재사용 대기시간 감소"];
 
-export interface IRankProps {
+export interface IRankItem {
   character_exp : number;
   character_guildname : string;
   character_level : number
@@ -161,4 +161,25 @@ export interface IRankProps {
   ranking : number;
   sub_class_name : string;
   world_name : string;
+}
+
+export interface IRankResponse {
+  overall: {
+    ranking: IRankItem[];
+  };
+  union: {
+    ranking: IRankItem[];
+  };
+  guild: {
+    ranking: IRankItem[];
+  };
+  doJang: {
+    ranking: IRankItem[];
+  };
+  theSeed: {
+    ranking: IRankItem[];
+  };
+  achievement: {
+    ranking: IRankItem[];
+  };
 }
