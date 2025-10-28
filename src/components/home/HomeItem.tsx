@@ -15,7 +15,7 @@ function HomeItem() {
 
   const onSearch = () => {
     if (search.trim() === "") return;
-    navigate(`search/${search}`);
+    navigate(`/search/${search}`);
   };
 
   return (

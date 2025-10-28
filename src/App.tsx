@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./Routes/Home";
 import Rank from "./Routes/Rank";
 import Search from "./Routes/Search";
@@ -20,7 +20,7 @@ function App() {
       <Wrapper>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/search" element={<Search />} />
           <Route path="/search/:search" element={<Search />} />
