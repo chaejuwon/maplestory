@@ -161,6 +161,19 @@ export const fetchCharacter = async (name: string) => {
   return response.data;
 }
 
+export interface IRankProps {
+  character_exp : number;
+  character_guildname : string;
+  character_level : number
+  character_name : string;
+  character_popularity : number;
+  class_name : string;
+  date : string;
+  ranking : number;
+  sub_class_name : string;
+  world_name : string;
+}
+
 export const fetchRank = async () => {
   const now = new Date();
   const year = now.getFullYear();
