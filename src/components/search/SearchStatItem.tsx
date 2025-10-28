@@ -5,7 +5,7 @@ import {
   IMapleProps,
   jobMainStatMap,
   SearchItemProps,
-} from "../../api";
+} from "../../props";
 
 function SearchStatItem({ itemRes, basicRes }: SearchItemProps) {
   // 추가옵션 계산

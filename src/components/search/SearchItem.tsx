@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchCharacter, IMapleProps, SearchItemProps, SearchMainProps } from "../../api";
+import { fetchCharacter } from "../../api";
+import { IMapleProps, SearchItemProps, SearchMainProps } from "../../props";
 import { useParams } from "react-router-dom";
 import SearchMainItem from "./SearchMainItem";
 import SearchStatItem from "./SearchStatItem";

@@ -1,4 +1,4 @@
-import { IMapleProps } from "../../api";
+import { IMapleProps } from "../../props";
 
 interface SearchMainProps {
   basicRes: IMapleProps["basicRes"];
