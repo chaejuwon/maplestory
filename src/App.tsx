@@ -9,6 +9,7 @@ import { styled } from "styled-components";
 import Guild from "./Routes/Guild";
 import Character from "./Routes/Character";
 import Gold from "./Routes/Gold";
+import GuildSearch from "./components/guild/GuildSearch";
 
 const Wrapper = styled.div`
   width:100%;
@@ -26,6 +27,7 @@ function App() {
           <Route path="/search/:search" element={<Search />} />
           <Route path="/rank" element={<Rank />} />
           <Route path="/guild" element={<Guild />} />
+          <Route path="/guild/search/:search" element={<GuildSearch />} />
           <Route path="/character" element={<Character />} />
           <Route path="/gold" element={<Gold />} />
         </Routes>
