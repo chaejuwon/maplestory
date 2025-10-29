@@ -15,7 +15,7 @@ export const fetchRank = async () => {
   const year = now.getFullYear();
   const month = now.getMonth() + 1;
   const date1 = now.getDate() - 7;
-  const date =  `${year}-${month}-${date1}`;
+  const date = `${year}-${month}-${date1}`;
   const response = await axios.get(`${BASED_URL}/rank`, {
     params: {date}
   });
@@ -24,7 +24,7 @@ export const fetchRank = async () => {
 
 export const fetchGuild = async (title: string) => {
   const response = await axios.get(`${BASED_URL}/guild`, {
-    params: {title}
+    params: {guild_name: title}
   });
   return response.data;
 }
