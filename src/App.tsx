@@ -27,7 +27,7 @@ function App() {
           <Route path="/search/:search" element={<Search />} />
           <Route path="/rank" element={<Rank />} />
           <Route path="/guild" element={<Guild />} />
-          <Route path="/guild/search/:search" element={<GuildSearch />} />
+          <Route path="/guild/search" element={<GuildSearch />} />
           <Route path="/character" element={<Character />} />
           <Route path="/gold" element={<Gold />} />
         </Routes>

@@ -22,9 +22,12 @@ export const fetchRank = async () => {
   return response.data;
 }
 
-export const fetchGuild = async (title: string) => {
+export const fetchGuild = async (worldName: string, guildName: string) => {
   const response = await axios.get(`${BASED_URL}/guild`, {
-    params: {guild_name: title}
+    params: {
+      world_name: worldName,
+      guild_name: guildName
+    }
   });
   return response.data;
 }
