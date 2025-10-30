@@ -62,7 +62,6 @@ function GuildItem() {
           </button>
         </form>
       </div>
-
     </div>
   )
 }

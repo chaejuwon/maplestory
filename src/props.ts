@@ -193,3 +193,24 @@ export interface IRankResponse {
     ranking: IRankItem[];
   };
 }
+
+export interface ISkill {
+  skill_description: string;
+  skill_effect: string;
+  skill_icon: string;
+  skill_level: number;
+  skill_name: string;
+}
+
+export interface IGuildProps {
+  guild_fame: number;
+  guild_level: number;
+  guild_master_name: string;
+  guild_member: string[];
+  guild_member_count: number;
+  guild_name: string;
+  guild_noblesse_skill: ISkill[];
+  guild_point: number;
+  world_name: string;
+}
+
