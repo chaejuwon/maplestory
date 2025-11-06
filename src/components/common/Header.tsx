@@ -60,17 +60,15 @@ function Header() {
       <HeaderWrap>
         <Link to="/home"><Logo src={logo} /></Link>
         <RightBox>
-          <form onSubmit={handleSubmit(onSearch)}>
-            <input type="text"
-                   {...register("headerItem", { required: true })} placeholder="닉네임을 입력해 모험가를 찾아보세요"
-                   onChange={(e) => setSearch(e.currentTarget.value)} value={search as string}
-            />
-          </form>
+          {/*<form onSubmit={handleSubmit(onSearch)}>*/}
+          {/*  <input type="text"*/}
+          {/*         {...register("headerItem", { required: true })} placeholder="닉네임을 입력해 모험가를 찾아보세요"*/}
+          {/*         onChange={(e) => setSearch(e.currentTarget.value)} value={search as string}*/}
+          {/*  />*/}
+          {/*</form>*/}
           <Nav>
             <li><Link to="rank">랭킹/통계</Link></li>
             <li><Link to="guild">길드</Link></li>
-            <li><Link to="character">직업 분석</Link></li>
-            <li><Link to="gold">주화</Link></li>
           </Nav>
         </RightBox>
       </HeaderWrap>
