@@ -49,8 +49,8 @@ function Header() {
   // // recoil
   // const [search, setSearch] = useRecoilState(searchItem);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [search, setSearch] = useState("");
-  const { register, handleSubmit } = useForm<IForm>();
+  const { register, handleSubmit, watch } = useForm<IForm>();
+  const search = watch("headerItem");
   const navigate = useNavigate();
 
   const onSearch = () => navigate(`search/${search}`);
@@ -79,8 +79,6 @@ function Header() {
               type="text"
               {...register("headerItem", { required: true })}
               placeholder="닉네임을 입력해 모험가를 찾아보세요"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
               className="border border-gray-300 bg-transparent px-3 py-2 w-48 sm:w-72 text-sm rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </form>
@@ -108,8 +106,6 @@ function Header() {
                 type="text"
                 {...register("headerItem", { required: true })}
                 placeholder="모험가 검색"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
                 className="border border-gray-300 w-full px-3 py-2 rounded-md focus:outline-none"
               />
             </form>
