@@ -53,7 +53,7 @@ function GuildItem() {
               type="text"
               {...register("guildName", { required: true })}
               placeholder="길드명을 입력하세요."
-              className="w-64 px-4 py-3 rounded-l-xl bg-transparent text-[16px] focus:outline-none placeholder:text-gray-400"
+              className="w-32 md:w-64 px-4 py-3 rounded-l-xl bg-transparent text-[16px] focus:outline-none placeholder:text-gray-400"
             />
             <button
               type="submit"
