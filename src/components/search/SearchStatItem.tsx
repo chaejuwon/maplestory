@@ -102,7 +102,7 @@ function SearchStatItem({ itemRes, basicRes }: SearchItemProps) {
   });
   return (
     <div className="bg-white shadow-lg rounded-xl p-8 mt-6">
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
         {itemRes.item_equipment.map((item, index) => (
           <div
             className="flex items-center border rounded-md bg-gray-50 p-3 gap-3"

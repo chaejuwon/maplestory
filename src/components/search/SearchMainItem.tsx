@@ -23,23 +23,23 @@ function SearchMainItem({ basicRes, statRes }: SearchMainProps) {
   ];
   return (
     <div className="bg-white shadow-lg rounded-xl p-8">
-      <div className="flex items-center gap-8">
+      <div className="flex md:flex-row flex-col items-center gap-8">
         <div className="flex-shrink-0 overflow-hidden">
           <img
             src={basicRes.character_image}
             alt="캐릭터 이미지"
-            className="w-32 h-32 object-contain rounded-md border bg-gray-50 scale-[2]"
+            className="w-64 h-64 md:w-32 md:h-32 object-contain rounded-md border bg-gray-50 scale-[2]"
           />
         </div>
 
         {/* 텍스트 영역 */}
         <div className="flex-1">
-          <h2 className="flex items-center mb-4">
+          <h2 className="flex md:flex-row flex-col items-center mb-4">
             <span
               className="inline-block px-4 py-1 bg-blue-500 text-white text-sm font-semibold rounded-md">
               캐릭터 이름
             </span>
-            <span className="ml-3 text-2xl font-bold text-gray-800">
+            <span className="inline-block ml-3 text-2xl font-bold text-gray-800">
                         {basicRes.character_name}
                   </span>
           </h2>
